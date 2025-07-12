@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const currentDate = new Date();
 
   // Data alvo (8 de janeiro)
-  const targetDate = new Date('August 9, 2025 20:00:00');
+  const targetDate = new Date('August 9, 2025 09:30:00');
 
   // Calcula a diferença em milissegundos
   const difference = targetDate - currentDate;
