@@ -51,7 +51,7 @@
 }
 
 .progress_bar {
-    background-color: #FFCC00;
+    background-color: #ffcc00;
     height: 100%;
     transition: width 0.5s ease;
     display: flex;
