@@ -594,7 +594,9 @@ footer a{
 }
 @media(max-width:767px){
     .logo{
-        width: 32%;
+        width: 50%;
+        height: 10%;
+        margin-bottom: 50px;
     }
     .sec-inicio{
         padding-left: 10px;
@@ -811,9 +813,9 @@ footer a{
         height: auto;
     }
     .logo{
-        width: 150px;
-        height: 100px;
-        margin-left: 0;
+        width: 50%;
+        height: 10%;
+        margin-bottom: 50px;
     }
 }
 @media(max-width:420px){
@@ -822,8 +824,9 @@ footer a{
         gap: 10px;
     }
     .logo{
-        width: 30%;
+        width: 50%;
         height: 10%;
+        margin-bottom: 50px;
     }
     .aula-numero{
         padding-right: 3%;
