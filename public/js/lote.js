@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
     var progress_percent = $(".lote_percent");
 
     $.ajax({
-        url: "/voa-brasil/src/Controllers/lote.php",
+        url: "/voa-masm/src/Controllers/lote.php",
         method: "GET",
         success: function (response) {
             console.log(response);
