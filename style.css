@@ -1,0 +1,854 @@
+:root{
+    font-family: 'Montserrat', 'montserrat';
+    --color1: #FFCC00;
+    --color2: white;
+    --color3: #0E0E0E;
+}
+html{
+    scroll-behavior: smooth;
+    background-color: #000000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sec-inicio{
+    display: flex;
+    background-color: transparent;
+    background-image: linear-gradient(294deg, #00000000 0%, #000000 70%);
+    padding-left: 8%;
+    padding-right: 100px;
+    color: var(--color2);
+    background-image: url(assets/fundo-sec1.webp);
+    background-size: cover;
+/*    background-size: auto 100%;*/
+/*    min-height: 100vh; */
+    height: auto;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 60%;
+    padding: 10px;
+}
+.logo{
+    width: 40%;
+    margin-bottom: 35px;
+    align-self: center;
+    margin-top: 10px;
+}
+.headline{
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+.headline span{
+    color: var(--color1);
+    line-height: 38px;
+    font-weight: bolder;
+}
+.info{
+    display: flex;
+    font-weight: 600;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    margin-right: calc(-45px/2);
+    margin-left: calc(-45px/2);
+    font-size: 15px;
+}
+.info-item{
+   display: flex;
+/*   white-space: nowrap; */
+   align-items: center;
+   justify-content: center;
+   gap: 3px;
+   padding-left: 25px;
+   padding-right: 25px;
+}
+.info-item p{
+    font-weight: 700;
+}
+.info-icon svg{
+    display: flex;
+    color: var(--color1);
+}
+.sec-inicio h2{
+    color: var(--color1);
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 88%;
+    margin-left: 5px;
+}
+input, button{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 20px;
+}
+.iti__country-name{
+    color: var(--color3);
+}
+button{
+    background-color: var(--color1);
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: inherit;
+    line-height: 1;
+}
+.btn{
+    transition: 0.3s ease-in-out
+}
+.btn:hover{
+    color: var(--color2);
+    transition: 0.3s ease-in-out
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    appearance: none;
+}
+input::placeholder{
+    color: grey;
+}
+.sec-palestras{
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #0E0E0E;
+    color: var(--color2);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    max-width: 1100px;
+    line-height: 25px;
+    initial-letter: -0.1px;
+    word-spacing: 1px;
+    text-shadow: 0px 0px 0px rgba(0,0,0,0.3);
+    margin: 0px 0px 14.4px;
+}
+.maratona-info{
+    border: 1px solid var(--color1);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    max-width: 1150px;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.maratona-info svg{
+    color: var(--color1);
+}
+.maratona-info p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    width: 100%;
+}
+.maratona-info-item1,.maratona-info-item2,.maratona-info-item3,.maratona-info-item4,.maratona-info-item5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.maratona-info-item1 svg{
+    width: 50px;
+    height: 50px;
+}
+
+.maratona-info-item2 svg{
+    width: 60px;
+    height: 60px;
+}
+.maratona-info-item3 svg{
+    width: 50px;
+    height: 50px;
+}
+.maratona-info-item4 svg{
+    width: 50px;
+    height: 50px;
+}
+.maratona-info-item5 svg{
+    width: 45px;
+    height: 45px;
+}
+.maratona-info-item p{
+    width: 45%;
+    text-align: center;
+}
+.sec-conteudo{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    background-color: var(--color2);
+}
+.sec-conteudo h2{
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1;
+}
+.sec-conteudo span{
+    font-weight: 800;
+    width: 100%;
+    max-width:100px;
+}
+.sec-conteudo h5{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: #2C2C2C;
+}
+.aula{
+    border: 1px solid var(--color3);
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    max-width: 1150px;
+    padding: 20px;
+}
+.aula-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+}
+.aula-conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: start;
+    text-align: start;
+    padding: 10px 0;
+}
+.aula-data h2{
+    font-size: 50px;
+}
+.aula-data p{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.aula-data span{
+    color: var(--color1);
+}
+.aula-numero{
+    background-color: var(--color1);
+    width: 80px;
+    height: 45px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-weight: 600;
+    height: 47.5px;
+    font-size: 15px;
+}
+.aula-conteudo h2{
+    font-size: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+    font-weight: 600;
+}
+.aula-conteudo p{
+    margin: 0px 0px 14.4px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.sec-evento{
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #000000;
+    border-bottom: 1px solid #000000;
+}
+.participe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 915px;
+    height: 430px;
+    border: 3px solid var(--color1);
+    gap: 15px;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(141deg, rgba(0,0,0,1) 32%, rgba(255,204,0,1) 200%);
+}
+.participe p{
+    max-width: 620px;
+    width: 80%;
+    font-size: 20px;
+    color: var(--color2);
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+.btn-participar{
+/*    max-width: 360px; */
+    height: auto;
+    width: auto;
+    font-weight: 700;
+    /* white-space: nowrap; */
+    fill: #000000;
+    color: #000000;
+    border-radius: 5px;
+    padding: 20px 100px;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: inherit;
+    background-color: var(--color1);
+    transition-duration: .3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+}
+.btn-participar:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out
+}
+.sec-especialista{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: transparent;
+    background-image: linear-gradient(286deg, #000000 49%, #FFCC00 150%);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-top: 1px solid #000000;
+}
+.especialista{
+    display: flex;
+    max-width: 1150px;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+.historia{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: var(--color2);
+    width: 56%;
+}
+.historia h2{
+    font-size: 42px;
+}
+.historia p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+}
+.foto{
+    display: flex;
+/*    align-items: center;*/
+    align-items: flex-start;
+}
+.foto img{
+    display: flex;
+    max-width: 467px;
+    min-width: 200px;
+    height: auto;
+}
+.historia h3{
+    margin-top: 10px;
+    max-width: 300px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -3px;
+}
+#temporizador{
+    max-width: 720px;
+    height: 85px;
+    background-color: var(--color1);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 65.5%;
+    color: var(--color3);
+    gap: 10px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.tempo{
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#horas, #dias, #minutos, #segundos{
+    font-size: 37px;
+}
+footer{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: var(--color2);
+    border-bottom: 1px solid #000000;
+}
+footer p{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    max-width: 1200px;
+    margin: 0px 0px 0px 14.4px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    color: #A4A4A4;
+}
+footer a{
+    text-decoration: none;
+    color: #4F8FFC;
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+@media(min-width:3500px){
+    .sec-inicio{
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
+    .container{
+        margin: 0;
+        padding: 0;
+        align-self: center;
+    }
+}
+@media(min-width:1500px){
+    .container{
+        margin-left: 100px;
+    }
+    .logo{
+        margin-top: 20%;
+    }
+}
+@media(min-width:1800px){
+    .container{
+        margin-left: 220px;
+    }
+}
+@media(min-width:1400px){
+    .sec-inicio{
+        height: auto;
+    }
+
+}
+@media(max-width:1250px){
+    .sec-palestras{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .maratona-info{
+        width: 100%;
+    }
+}
+@media(min-width:1180px){
+    .container{
+        width: 580px;
+    }
+    .info{
+    /*    flex-wrap: nowrap; */
+    }
+}
+@media (max-width:1100px) {
+    .input, button{
+        padding-left: 0;
+        margin-left: 0;
+    }
+    .sec-palestras{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .sec-palestras h3{
+        font-size: 20px;
+        width: 90%;
+    }
+    .sec-evento{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .sec-conteudo, .sec-evento, footer{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sec-especialista{
+        flex-direction: column;
+        align-items: center;
+        padding-left:10px ;
+        padding-right: 10px;
+    }
+    .foto img{
+        margin-left: auto;
+        margin-right: auto;
+        width: 380px;
+        height: auto;
+    }
+    .historia{
+        width: 90%;
+        padding-bottom: 20px;
+    }
+    .historia p{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .historia h2{
+        text-align: center;
+    }
+}
+@media(max-width:950px){
+    .maratona-info{
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 98%;
+    }
+    .participe{
+        width: 100%;
+    }
+    .historia{
+        gap: 20px;
+    }
+    #temporizador{
+        width: 327.5px;
+        height: 85px;
+    }
+    .foto img{
+        width: 310px;
+        height: auto;
+    }
+    .info{
+        width: 380px;
+    }
+}
+@media(max-width:850px){
+    .aula{
+        width: 103%;
+    }
+    .aula-conteudo{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}
+@media(max-width:767px){
+    .logo{
+        width: 32%;
+    }
+    .sec-inicio{
+        padding-left: 10px;
+        padding-right: 10px;
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .headline{
+        font-size: 21px;
+        text-align: center;
+        margin-top: -40px;
+        line-height: 20px;
+  /*      white-space: nowrap; */
+    }
+    .container{
+        width: 100%;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .container h2{
+        font-size: 16px;
+        margin-bottom: -1px;
+    }
+    .info{
+  /*      flex-wrap: nowrap; */
+        width: 90%;
+    }
+    .info-item p{
+        font-size: 17px;
+    }
+    form{
+        width: 91%;
+    }
+    .sec-evento{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .participe{
+/*        height: 258px; */
+        width: 100%;
+    }
+    .participe p{
+        font-size: 18px;
+        width: 295.48px;
+/*        height: 126px; */
+    }
+    .btn-participar{
+        width: 280.36px;
+        height: auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .maratona-info{
+        gap:10px;
+        padding: 20px;
+        flex-grow: 0;
+        flex-shrink: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .maratona-info-item1,.maratona-info-item2,.maratona-info-item3,.maratona-info-item4,.maratona-info-item5{
+        flex-grow: 1;
+        width: 35%;
+        margin: 20px;
+    }
+    .sec-conteudo{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sec-conteudo h2{
+        font-size:22px ;
+        margin-top: 40px;
+    }
+    .sec-conteudo h5{
+        font-size: 15px;
+    }
+    .aula{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+    }
+    .aula-data{
+        width: 100%;
+    }
+    .aula-data h2{
+        font-size: 50px;
+    }
+    .aula-conteudo{
+        align-items: center;
+        text-align: left;
+        padding-left:0 ;
+        padding-right: 0;
+    }
+    .aula-conteudo h2{
+        align-self: flex-start;
+        font-size: 22px;
+        padding: 0;
+        margin: 0;
+        white-space: wrap;
+    }
+    .aula-numero{
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 4%;
+        height: 50.5px;
+    }
+    .aovivo{
+        width: 60%;
+        height: 95%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .especialista{
+        flex-direction: column;
+    }
+    .sec-palestras{
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    .sec-palestras h3{
+        font-size: 18px;
+        width: 45%;
+        letter-spacing: -0.9px;
+        font-weight: 500;
+    }
+    .historia{
+        justify-content: center;
+        align-items: center;
+        padding-left: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .historia h2{
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .historia p{
+        width: 100%;
+        font-size: 16px;
+    }
+    #temporizador{
+        width: 100%;
+    }
+    .foto img{
+        width: 467px;
+        height: auto;
+    }
+}
+@media(max-width:750px){
+    .aula{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .aula-data{
+        width: 100%;
+    }
+    .aula-conteudo{
+        align-items: center;
+        text-align: left;
+    }
+    .aula-numero{
+        width: 100%;
+    }
+    .sec-palestras{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .sec-palestras h3{
+        width: 80%;
+    }
+}
+@media(max-width:650px){
+    .info{
+        flex-wrap: wrap;
+        width: 410px;
+        gap: 0;
+    }
+}
+@media(max-width:520px){
+    h1{
+        width: 90%;
+    }
+    .sec-inicio{
+        padding: 0;
+    }
+}
+@media (max-width:500px) {
+    .maratona-info-item1,.maratona-info-item2,.maratona-info-item3,.maratona-info-item4,.maratona-info-item5{
+        width: 25%;
+    }
+    .headline{
+        line-height: 27px;
+    }
+    .historia h2{
+        font-size: 22px;
+    }
+}
+@media(max-width:480px){
+    .headline{
+        white-space: wrap;
+    }
+}
+@media(max-width:460px){
+    h1, .sec-inicio h2{
+        width: 90%;
+    }
+    .foto img{
+        height: auto;
+    }
+    .logo{
+        width: 150px;
+        height: 100px;
+        margin-left: 0;
+    }
+}
+@media(max-width:420px){
+    .info{
+        width: 90%;
+        gap: 10px;
+    }
+    .logo{
+        width: 30%;
+        height: 10%;
+    }
+    .aula-numero{
+        padding-right: 3%;
+    }
+}
+@media(max-width:350px){
+    .maratona-info{
+        padding: 0;
+    }
+    .headline span{
+        line-height: 25px;
+    }
+    h1, .sec-inicio h2{
+        width: 90%;
+    }
+    .participe p{
+        width: 95%;
+    }
+    .btn-participar{
+        width: 85%;
+        white-space: wrap;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+}
