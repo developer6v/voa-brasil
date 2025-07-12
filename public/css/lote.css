@@ -44,7 +44,7 @@
 }
 
 .progress_bar_container {
-  background-color: rgb(26 26 26 / 70%);
+  background-color: rgba(255, 255, 255, 1);
   opacity: 1;
   border-radius: 2px;
   padding: 3px;
@@ -59,7 +59,6 @@
     height: 6px;
     justify-content: center;
     position: relative;
-    border: 0.1rem solid rgb(26 26 26 / 70%);
 }
 
 .progress_percent {
